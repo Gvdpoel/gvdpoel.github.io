@@ -48,7 +48,7 @@ Dropping multiple files into the box will merge the files and add headers.
     const { width, height } = pages[0].getSize()
     const pngImageBytes = getHeader();
     const pngImage = await pdfDoc.embedPng(pngImageBytes)
-    const pngDims = pngImage.scale(0.2)
+    const pngDims = pngImage.scale(0.25)
     // Draw the Header at the top right of the page
     for (var i = pages.length - 1; i >= 0; i--) {
       pages[i].drawImage(pngImage, {
